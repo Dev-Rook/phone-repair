@@ -1,9 +1,13 @@
 import React, {useState} from 'react'
 import Styles from "../Styles/Page-Styles/Landing.module.scss"
 
+import Hero from '../Page-Sections/Hero'
+
 const Landing = () => {
   return (
-    <div className={Styles.Page}>Lading</div>
+    <div className={Styles.Page}>
+      <Hero />
+    </div>
   )
 }
 
