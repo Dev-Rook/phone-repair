@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react-dom";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Styles from "./App.module.scss";
 
@@ -22,7 +22,7 @@ import Accesories from "./Pages/Accesories";
 
 // Dynamic Page Import Start
 import IosDevices from "./Dynamic-Pages/IosDevices";
-import AndoridDevices from "./Dynamic-Pages/AndoridDevices";
+import AndroidDevices from "./Dynamic-Pages/AndroidDevices";
 import SingleItem from "./Dynamic-Pages/SingleItem";
 // Dynamic Page Import End
 
@@ -59,7 +59,7 @@ function App() {
           <Route path={"*"} element={<Error />} />
 
           {/* Dynamic Routes Start */}
-          <Route path={"/Android/:id"} element={<AndoridDevices />} />
+          <Route path={"/Android/:id"} element={<AndroidDevices />} />
           <Route path={"/Ios/:id"} element={<IosDevices />} />
           <Route path={"/Single/:id"} element={<SingleItem />} />
           {/* Dynamic Routes End */}
