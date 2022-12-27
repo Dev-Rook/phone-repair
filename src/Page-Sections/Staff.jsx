@@ -24,7 +24,7 @@ const Staff = () => {
       <div className={Styles.Section}>
         <div className={Styles.Content_Container}>
           <p className={Styles.Small_Text}>Management / Staff</p>
-          <p className={Styles.Large_Text}>HHS Gate Keepers</p>
+          <p className={Styles.Large_Text}>Company Crew</p>
 
           <button className={Styles.Staff_Button}>View All</button>
         </div>
@@ -74,8 +74,8 @@ const Staff = () => {
                     <Link to={""} className={Styles.Link}>
                       <div className={Styles.Project_Card}>
                         <div className={Styles.Text_Container}>
+                          <p className={Styles.Name}>{value?.First_Name} {value?.Last_Name}</p>
                           <p className={Styles.Title}>{value?.Title}</p>
-                          <p className={Styles.Architect}>{value?.Architect}</p>
                         </div>
                         <div className={Styles.Diffuser}></div>
                         <div className={Styles.Image_Container}>

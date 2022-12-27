@@ -1,12 +1,4 @@
 .Section {
-  //   background: rgb(23, 26, 32);
-  //   background: linear-gradient(
-  //     90deg,
-  //     rgba(23, 26, 32, 1) 0%,
-  //     rgba(36, 54, 55, 0.773546918767507) 82%,
-  //     rgba(36, 54, 55, 1) 100%
-  //   );
-
   display: flex;
   flex-direction: column;
 
@@ -120,23 +112,23 @@
           bottom: 20px;
           left: 20px;
 
-          .Title {
+          .Name {
             font-size: 25px;
             font-weight: 300;
             font-style: bold;
           }
 
-          .Architect {
-            font-size: 15px;
+          .Title {
+            font-size: 18px;
             font-weight: 300;
             font-style: bold;
           }
 
-          .Title {
-            font-size: 25px;
-            font-weight: 300;
-            font-style: bold;
-          }
+          // .Title {
+          //   font-size: 25px;
+          //   font-weight: 300;
+          //   font-style: bold;
+          // }
         }
 
         .Diffuser {
