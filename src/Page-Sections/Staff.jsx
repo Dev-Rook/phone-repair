@@ -33,7 +33,7 @@ const Staff = () => {
           <Swiper
             slidesPerView={4}
             speed={2000}
-            spaceBetween={0}
+            spaceBetween={10}
             modules={[Navigation, FreeMode, Mousewheel, Autoplay]}
             autoplay={{
               delay: 5000,

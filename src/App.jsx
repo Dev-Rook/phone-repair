@@ -18,6 +18,7 @@ import Error from "./Pages/Error";
 import Android from "./Pages/Android";
 import Ios from "./Pages/Ios";
 import Accesories from "./Pages/Accesories";
+import Store from "./Pages/Store";
 // Page Imports End
 
 // Dynamic Page Import Start
@@ -56,6 +57,7 @@ function App() {
           <Route path={"Ios"} element={<Ios />} />
           <Route path={"Android"} element={<Android />} />
           <Route path={"Accesories"} element={<Accesories />} />
+          <Route path={"Store"} element={<Store />} />
           <Route path={"*"} element={<Error />} />
 
           {/* Dynamic Routes Start */}

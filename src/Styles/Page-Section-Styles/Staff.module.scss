@@ -8,6 +8,7 @@
   align-items: left;
 
   gap: 20px;
+  padding: 5px;
 
   // padding: 5px;
   // padding-top: 80px;
@@ -82,6 +83,7 @@
 
       .Project_Card {
         border: 1px solid rgba(255, 255, 255, .3);
+        border-radius: 10px;
 
         display: flex;
         flex-direction: column;

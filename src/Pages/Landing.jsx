@@ -14,10 +14,10 @@ const Landing = () => {
     <div className={Styles.Page}>
       <Hero />
       <Services />
-      <Staff />
-      <News />
       <IosBanner />
       <AndroidBanner />
+      <Staff />
+      <News />
       <GetInTouch />
     </div>
   )

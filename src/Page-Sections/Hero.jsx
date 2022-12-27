@@ -31,9 +31,9 @@ const Hero = () => {
         </Link>
       </div>
 
-      <div className={Styles.Diffuser}></div>
 
       <div className={Styles.Slider_Container}>
+      <div className={Styles.Diffuser}></div>
         <Swiper
           slidesPerView={1}
           speed={2000}
