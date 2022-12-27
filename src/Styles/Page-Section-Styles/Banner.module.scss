@@ -32,11 +32,14 @@
   }
 
   .Image_Container {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 3px 6px, rgba(255, 255, 255, 0.23) 0px 3px 6px;
+    border-radius: 10px;
     position: relative;
     height: 100%;
     width: 100%;
     display: flex;
+    overflow: hidden;
+    transition: .5s;
 
     .Diffuser {
       position: absolute;
@@ -53,6 +56,13 @@
       width: 100%;
       object-fit: cover;
       transition: 0.5s;
+    }
+  }
+
+  .Image_Container:is(:hover, :focus) {
+    transform: translateY(-5px);
+    .Banner {
+      transform: scale(1.1);
     }
   }
 }

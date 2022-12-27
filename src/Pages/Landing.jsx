@@ -7,6 +7,7 @@ import Staff from '../Page-Sections/Staff'
 import News from '../Page-Sections/News'
 import IosBanner from '../Page-Sections/IosBanner'
 import AndroidBanner from '../Page-Sections/AndroidBanner'
+import GetInTouch from '../Page-Sections/GetInTouch'
 
 const Landing = () => {
   return (
@@ -17,6 +18,7 @@ const Landing = () => {
       <News />
       <IosBanner />
       <AndroidBanner />
+      <GetInTouch />
     </div>
   )
 }
