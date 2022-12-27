@@ -2,16 +2,16 @@
     {
         "id": 1,
         "Image": "",
-        "Title": "Title"
+        "Title": "Trade"
     },
     {
         "id": 2,
-        "Image": "",
-        "Title": "Title"
+        "Image": "https://cdn-icons-png.flaticon.com/512/4982/4982324.png",
+        "Title": "Repair"
     },
     {
         "id": 3,
         "Image": "",
-        "Title": "Title"
+        "Title": "Sell"
     }
 ]
