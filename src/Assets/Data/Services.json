@@ -1,17 +1,17 @@
 [
-    {
-        "id": 1,
-        "Image": "",
-        "Title": "Trade"
-    },
-    {
-        "id": 2,
-        "Image": "https://cdn-icons-png.flaticon.com/512/4982/4982324.png",
-        "Title": "Repair"
-    },
-    {
-        "id": 3,
-        "Image": "",
-        "Title": "Sell"
-    }
+  {
+    "id": 1,
+    "Icon": "https://github.com/Dev-Rook/phone-repair/blob/master/src/Assets/Icons/Phone-Swap-Icon-1.png?raw=true",
+    "Title": "Trade"
+  },
+  {
+    "id": 2,
+    "Icon": "https://github.com/Dev-Rook/phone-repair/blob/master/src/Assets/Icons/Phone-Repair-Icon-1.png?raw=true",
+    "Title": "Repair"
+  },
+  {
+    "id": 3,
+    "Icon": "https://github.com/Dev-Rook/phone-repair/blob/master/src/Assets/Icons/Phone-Store-Icon-1.png?raw=true",
+    "Title": "Sell"
+  }
 ]
