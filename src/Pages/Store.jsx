@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Styles from "../Styles/Page-Styles/Store.module.scss";
 
+import Ios from "../Components/Carousels/Ios";
+
 const Store = () => {
   return (
     <div className={Styles.Page}>
@@ -10,6 +12,8 @@ const Store = () => {
       <div className={Styles.Page_Banner_Container}>
         <img src={``} alt="" className={Styles.Banner} />
       </div>
+
+      <Ios />
     </div>
   );
 };

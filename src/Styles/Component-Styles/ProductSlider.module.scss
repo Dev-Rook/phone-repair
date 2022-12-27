@@ -1,0 +1,11 @@
+.Slider_Container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+
+  justify-content: left;
+
+  height: fit-content;
+  width: 100%;
+}
