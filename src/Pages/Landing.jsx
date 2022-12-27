@@ -5,6 +5,7 @@ import Hero from '../Page-Sections/Hero'
 import Services from "../Page-Sections/Services"
 import Staff from '../Page-Sections/Staff'
 import News from '../Page-Sections/News'
+import IosBanner from '../Page-Sections/IosBanner'
 
 const Landing = () => {
   return (
@@ -13,6 +14,7 @@ const Landing = () => {
       <Services />
       <Staff />
       <News />
+      <IosBanner />
     </div>
   )
 }
