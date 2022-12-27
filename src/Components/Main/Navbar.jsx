@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <div className={Styles.Navbar}>
       <div className={Styles.Logo_Container}>
-        <img src={``} alt="" className={Styles.Logo} />
+        <img src={`https://github.com/Dev-Rook/phone-repair/blob/master/src/Assets/Images/Ios-Banner-Image.jpg?raw=true`} alt="" className={Styles.Logo} />
       </div>
 
       <ul className={Styles.Navlink_Container}>

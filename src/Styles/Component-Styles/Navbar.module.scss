@@ -57,6 +57,7 @@
     width: fit-content;
 
     .NavItem {
+      display: none;
       .Navlink {
         color: white;
         font-size: 15px;
@@ -68,6 +69,16 @@
     .MenuIcon {
       cursor: pointer;
       display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 996px) {
+  .Navbar {
+    .Navlink_Container {
+      .NavItem {
+        display: none;
+      }
     }
   }
 }
