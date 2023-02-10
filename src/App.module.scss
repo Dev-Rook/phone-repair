@@ -6,12 +6,12 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  
+
   .Back_To_Top_Icon {
     position: fixed;
-    bottom: 50px;
+    bottom: 20px;
     right: 5px;
-    z-index: 99;
+    z-index: 20;
     cursor: pointer;
 
     color: black;
@@ -21,6 +21,6 @@
   }
 
   .Show_Back_To_Top {
-    transform:  translateX(0%);
+    transform: translateX(0%);
   }
 }

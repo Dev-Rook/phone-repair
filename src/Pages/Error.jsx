@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
-import Styles from "../Styles/Page-Styles/Error.module.scss"
+import React from 'react'
+
 const Error = () => {
   return (
-    <div className={Styles.Page}>Error</div>
+    <div>Error</div>
   )
 }
 

@@ -1,31 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Styles from "./App.module.scss";
 
-// Material UI Icon Import Start
 import NavigationIcon from "@mui/icons-material/Navigation";
-// Material UI Icon Import End
 
-// Componet Import Start
 import Navbar from "./Components/Main/Navbar";
 import Footer from "./Components/Main/Footer";
-// Componet Import End
+import Fallback from "./Components/Main/Fallback";
 
-// Page Imports Start
-import Landing from "./Pages/Landing";
-import Contact from "./Pages/Contact";
-import Error from "./Pages/Error";
-import Android from "./Pages/Android";
-import Ios from "./Pages/Ios";
-import Accesories from "./Pages/Accesories";
-import Store from "./Pages/Store";
-// Page Imports End
+// Page import Start
+const Home = lazy(() => import("./Pages/Home"));
+const Error = lazy(() => import("./Pages/Error"));
+// Page Import End
 
-// Dynamic Page Import Start
-import IosDevices from "./Dynamic-Pages/IosDevices";
-import AndroidDevices from "./Dynamic-Pages/AndroidDevices";
-import SingleItem from "./Dynamic-Pages/SingleItem";
-// Dynamic Page Import End
+// Dynamic Page Imports Start
+const PostSingle = lazy(() => import("./Dynamic-Pages/PostSingle"));
+const Profile = lazy(() => import("./Dynamic-Pages/Profile"));
+// Dynamic Page Imports End
 
 function App() {
   const [backToTop, setBackToTop] = useState(false);
@@ -50,28 +41,24 @@ function App() {
   return (
     <div className={Styles.App}>
       <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path={"/"} element={<Landing />} />
-          <Route path={"Contact"} element={<Contact />} />
-          <Route path={"Ios"} element={<Ios />} />
-          <Route path={"Android"} element={<Android />} />
-          <Route path={"Accesories"} element={<Accesories />} />
-          <Route path={"Store"} element={<Store />} />
-          <Route path={"*"} element={<Error />} />
+        <Navbar scroll={scrollUp} />
+        <Suspense fallback={<Fallback />}>
+          <Routes>
+            <Route path={"/"} element={<Home />} />
+            <Route path={"*"} element={<Error />} />
 
-          {/* Dynamic Routes Start */}
-          <Route path={"/Android/:id"} element={<AndroidDevices />} />
-          <Route path={"/Ios/:id"} element={<IosDevices />} />
-          <Route path={"/Single/:id"} element={<SingleItem />} />
-          {/* Dynamic Routes End */}
-        </Routes>
+            {/* Dynamic Routes Start */}
+            <Route path={"Post/:id"} element={<PostSingle />} />
+            <Route path={"Profile/:id"} element={<Profile />} />
+            {/* Dynamic Routes End */}
+          </Routes>
+        </Suspense>
         <Footer />
       </BrowserRouter>
 
       <NavigationIcon
         onClick={scrollUp}
-        sx={{ fontSize: 30, color: "black" }}
+        sx={{ fontSize: 30 }}
         className={`${Styles.Back_To_Top_Icon} ${
           backToTop ? Styles.Show_Back_To_Top : ""
         }`}
